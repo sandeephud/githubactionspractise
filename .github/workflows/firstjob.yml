@@ -4,6 +4,9 @@ jobs:
   first_job:
    runs-on: ubuntu_latest
    steps:
-      -name:"welcome"
-       run:echo "HI" 
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: "welcome"
+        run: echo "HI" 
  
